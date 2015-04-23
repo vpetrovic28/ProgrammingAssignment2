@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...) {
 	m <- x$getinverse()
 	if (!is.null(m)){
 		mb <- x$get()
-		if (mb == x){
+		if (all.equal(mb, x){
 			return (m)
 		}
 	} 
